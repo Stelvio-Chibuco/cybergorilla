@@ -1,36 +1,36 @@
-/* Change this file to get your personal Portfolio */
+/* Altere este arquivo para obter seu Portfólio pessoal */
 
-// To change portfolio colors globally go to the  _globalColor.scss file
+// Para alterar as cores do portfólio globalmente, vá para o arquivo _globalColor.scss
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/splashAnimation"; // Renomeie para o nome do seu arquivo para animação personalizada
 
-// Splash Screen
+// Tela de Abertura (Splash Screen)
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: true, // defina como false para desativar a tela de abertura
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 2000 // defina a duração da animação conforme sua animação
 };
 
-// Summary And Greeting Section
+// Seção de Resumo e Saudação
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: true // defina como false para usar SVG estático
 };
 
 const greeting = {
   username: "Stelvio Chibuco",
-  title: "Ola a todos, sejam bem vindos ao meu webfolio",
+  title: "Olá a todos, sejam bem-vindos ao meu webfolio",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Um apaixonado desenvolvedor full stack 🚀 com experiência na construção de aplicações web e mobile com JavaScript / Reactjs / Nodejs / React Native e outras bibliotecas e frameworks interessantes."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
-  displayGreeting: true // Set false to hide this section, defaults to true
+    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // deixe vazio para ocultar o botão
+  displayGreeting: true // defina como false para ocultar esta seção, padrão é true
 };
 
-// Social Media Links
+// Links de Mídias Sociais
 
 const socialMediaLinks = {
   github: "https://github.com/Stelvio-Chibuco",
@@ -40,27 +40,27 @@ const socialMediaLinks = {
   facebook: "https://web.facebook.com/stelvio.chibuco/",
   medium: "",
   stackoverflow: "",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
-  display: true // Set true to display this section, defaults to false
+  // Instagram, Twitter e Kaggle também são suportados nos links!
+  // Para personalizar ícones e links sociais, ajuste src/components/SocialMedia
+  display: true // defina como true para exibir esta seção, padrão é false
 };
 
-// Skills Section
+// Seção de Habilidades
 
 const skillsSection = {
   title: "Quem sou eu?",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "DESENVOLVEDOR FULL STACK LOUCO QUE QUER EXPLORAR TODA TECNOLOGIA",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Desenvolver interfaces de usuário altamente interativas para suas aplicações web e mobile"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Aplicações Web Progressivas (PWA) em pilhas normais e SPA"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Integração de serviços de terceiros como Firebase/ AWS / Digital Ocean"
     )
   ],
 
-  /* Make Sure to include correct Font Awesome Classname to view your icon
+  /* Certifique-se de incluir o nome correto da Font Awesome para visualizar seu ícone
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
@@ -117,67 +117,67 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-docker"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true // defina como false para ocultar esta seção, padrão é true
 };
 
-// Education Section
+// Seção de Educação
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true, // defina como false para ocultar esta seção, padrão é true
   schools: [
     {
-      schoolName: "Uiversidade Save",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Universidade Save",
+      logo: require("./assets/images/UniSave_logo.png"),
+      subHeader: "Especialização em Engenharia de sistemas",
+      duration: "Janeiro de 2022 - Dezembro de 2023",
+      desc: "Participou das II Jornadas Cientificas na UJC.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+      schoolName: "Universidade Save",
+      logo: require("./assets/images/UniSave_logo.png"),
+      subHeader: "Licenciatura em Informática",
+      duration: "Marco de 2020 - Dezembro de 2023",
+      desc: "Classificado entre os 10% melhores do programa. Cursou disciplinas sobre Engenharia de Software, Segurança na Web, Sistemas Operacionais, ...",
       descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
+// Suas 3 principais pilhas de tecnologia/experiência técnica
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true, // Defina como true para mostrar a Seção de Proficiência
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Frontend/Design", //Insira a pilha ou tecnologia na qual você tem experiência
+      progressPercentage: "90%" //Insira a proficiência relativa em porcentagem
     },
     {
       Stack: "Backend",
       progressPercentage: "70%"
     },
     {
-      Stack: "Programming",
+      Stack: "Programação",
       progressPercentage: "60%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false // Defina como true para exibir as insígnias do codersrank, precisa alterar seu nome de usuário em src/containers/skillProgress/skillProgress.js:17:62, padrão é false
 };
 
-// Work experience section
+// Seção de Experiência Profissional
 
 const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
+  display: true, // Defina como true para mostrar a Seção de Experiências Profissionais
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
+      role: "Engenheiro de Software",
+      company: "UniSave",
       companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
+      date: "Janeiro de 2022 – Presente",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -185,46 +185,46 @@ const workExperiences = {
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
+      role: "Desenvolvedor Front-End",
+      company: "UniSave",
       companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
+      date: "Maio de 2021 – Presente",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
+      role: "Estagiário em Engenharia de Software",
+      company: "UniSave",
       companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
+      date: "Julho 2023 – Dezembro 2023",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   ]
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
+/* Sua Seção de Código Aberto para Visualizar Seus Projetos Fixados no Github
+Para saber como obter a chave do github, consulte readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "true", // Defina como true ou false para mostrar o perfil de Contato usando Github, padrão é true
+  display: true // Defina como false para ocultar esta seção, padrão é true
 };
 
-// Some big projects you have worked on
+// Alguns projetos grandes em que você trabalhou
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Grandes Projetos",
+  subtitle: "ALGUMAS STARTUPS E EMPRESAS QUE AJUDEI A CRIAR SUA TECNOLOGIA",
   projects: [
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
+      projectName: "Stock&venda",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Visitar o site",
+          url: "http://stock&venda.co.mz./"
         }
-        //  you can add extra buttons here.
+        //  você pode adicionar botões extras aqui.
       ]
     },
     {
@@ -233,148 +233,149 @@ const bigProjects = {
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       footerLink: [
         {
-          name: "Visit Website",
+          name: "Visitar o site",
           url: "http://nextu.se/"
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true // Defina como false para ocultar esta seção, padrão é true
 };
 
-// Achievement Section
-// Include certificates, talks etc
+// Seção de Conquistas
+// Inclua certificados, palestras, etc.
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Conquistas e Certificações 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Conquistas, Certificações, Cartas de Prêmios e Algumas Coisas Legais que Eu Fiz!",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Finalista do Google Code-In",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+        "Primeiro paquistanês a ser selecionado como Finalista do Google Code-In entre 4000 estudantes de 77 países diferentes.",
       image: require("./assets/images/codeInLogo.webp"),
       imageAlt: "Google Code-In Logo",
       footerLink: [
         {
-          name: "Certification",
+          name: "Certificação",
           url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
         },
         {
-          name: "Award Letter",
+          name: "Carta de Prêmio",
           url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
         },
         {
-          name: "Google Code-in Blog",
+          name: "Blog do Google Code-in",
           url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Ação do Google Assistant",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
+        "Desenvolveu uma Ação do Google Assistant, JavaScript Guru, disponível em 2 bilhões de dispositivos em todo o mundo.",
       image: require("./assets/images/googleAssistantLogo.webp"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
+          name: "Visualizar a Ação do Google Assistant",
           url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
         }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+      title: "Desenvolvedor de Aplicativos Web PWA",
+      subtitle: "Certificado pela SMIT em Desenvolvimento de Aplicativos Web PWA",
       image: require("./assets/images/pwaLogo.webp"),
       imageAlt: "PWA Logo",
       footerLink: [
-        {name: "Certification", url: ""},
+        {name: "Certificação", url: ""},
         {
-          name: "Final Project",
+          name: "Projeto Final",
           url: "https://pakistan-olx-1.firebaseapp.com/"
         }
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true // Defina como false para ocultar esta seção, padrão é true
 };
 
-// Blogs Section
+// Seção de Blogs
 
 const blogSection = {
   title: "Blogs",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+    "Com amor pelo desenvolvimento de coisas legais, adoro escrever e ensinar aos outros o que aprendi.",
+  displayMediumBlogs: "true", // Defina como true para exibir blogs do Medium em vez dos codificados manualmente
   blogs: [
     {
       url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      title: "Ganhe uma camiseta do Google Assistant e $200 em créditos na Google Cloud",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "Você quer ganhar $200 e uma camiseta do Google Assistant criando uma Ação do Google Assistant em menos de 30 minutos?"
     },
     {
       url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      title: "Por que REACT é o melhor?",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "React é uma biblioteca JavaScript para construir Interfaces de Usuário. É mantido pelo Facebook e uma comunidade de desenvolvedores individuais e empresas."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true // Defina como false para ocultar esta seção, padrão é true
 };
 
-// Talks Sections
+
+// Seção de Palestras
 
 const talkSection = {
-  title: "TALKS",
+  title: "PALESTRAS",
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    "AMO COMPARTILHAR MEU CONHECIMENTO LIMITADO E RECEBER UM CRACHÁ DE PALESTRANTE 😅"
   ),
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
+      title: "Criar Ações para o Google Assistant",
+      subtitle: "Codelab na GDG DevFest Karachi 2019",
       slides_url: "https://bit.ly/saadpasta-slides",
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true // Defina como false para ocultar esta seção, padrão é true
 };
 
-// Podcast Section
+// Seção de Podcast
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+  subtitle: "AMO FALAR SOBRE MIM E TECNOLOGIA",
 
-  // Please Provide with Your Podcast embeded Link
+  // Forneça o link incorporado do seu podcast
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true // Defina como false para ocultar esta seção, padrão é true
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Entre em Contato ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Quer discutir um projeto ou apenas dizer oi? Minha caixa de entrada está aberta para todos.",
   number: "+92-0000000000",
   email_address: "saadpasta70@gmail.com"
 };
 
-// Twitter Section
+// Seção do Twitter
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  userName: "twitter", // Substitua "twitter" pelo seu nome de usuário no Twitter sem o @
+  display: true // Defina como true para exibir esta seção, padrão é false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = false; // Defina como false se você não estiver procurando emprego. Também será exibido como "Aberto para oportunidades: Sim/Não" no rodapé do GitHub
 
 export {
   illustration,
